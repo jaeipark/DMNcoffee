@@ -1,0 +1,97 @@
+@charset "UTF-8";
+	.home-icon{
+		width: 35px;
+		height: auto;
+	}
+	.home{
+		background-color : transparent;
+		position: absolute;
+  		top: 25px;
+  		left : 715px;
+  		border: none;
+  		cursor:pointer;
+	}
+	.logo{
+		width : 200px;
+		height: auto;
+		background-color : transparent;
+		position: absolute;
+  		top: 17px;
+  		left : 1020px;
+  		border: none;
+	}
+	.head{
+		position : absolute;
+		left: 715px;
+		top : 80px;
+		width: 510px;
+		text-align: left;
+		color:#6495ED;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+	}
+	.question{
+		position : absolute;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 30px;
+		left: 715px;
+		top : 180px;
+		width: 510px;
+		border-spacing: 1px;
+	}
+	.member{
+		position : absolute;
+		left: 715px;
+		top: 270px;
+	}
+	.btn1{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 28px;
+		width : 120px;
+		cursor: pointer;
+		height: 140px;
+	}
+	.pay{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 25px;
+		width : 510px;
+		position: absolute;
+		left: 715px;
+		top: 650px;
+		height: 200px;
+	}
+	.pay-table{
+		padding: 5px;
+	}
+	.btn1{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 24px;
+		width : 100px;
+		height: 120px;
+		cursor: pointer;
+	}
+	.btn2{
+		background-color:  #f1f3f5;
+		border : none;
+		padding : 5px;
+		margin: 5px;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		width : 160px;
+		cursor: pointer;
+	}
+	.bottom{
+		position: absolute;
+		left: 710px;
+		top: 860px;
+	}

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+	.home-icon{
+		width: 35px;
+		height: auto;
+	}
+	.home{
+		background-color : transparent;
+		position: absolute;
+  		top: 25px;
+  		left : 715px;
+  		border: none;
+  		cursor:pointer;
+	}
+	.logo{
+		width : 200px;
+		height: auto;
+		background-color : transparent;
+		position: absolute;
+  		top: 17px;
+  		left : 1020px;
+  		border: none;
+	}
+	.numbox{
+		position : absolute;
+		left : 715px;
+		top : 80px;
+		width: 510px;
+	}
+	.keypad{
+		position : absolute;
+		left : 705px;
+		top : 270px;
+		width: 510px;
+		height: 510px;
+		text-align: center;
+		border-spacing: 10px;
+	}
+	.button{
+		position : absolute;
+		left : 705px;
+		top : 850px;
+		width: 510px; 
+		text-align: center;
+	}
+	.btn1{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 30px;
+		width : 150px;
+		height: 120px;
+		cursor: pointer;
+	}
+	.btn2{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 24px;
+		width : 180px;
+		height: 50px;
+		cursor: pointer;
+	}
+	.memberphone{
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 28px;
+		width : 140px;
+		text-align: center;
+		height: 50px;
+	}

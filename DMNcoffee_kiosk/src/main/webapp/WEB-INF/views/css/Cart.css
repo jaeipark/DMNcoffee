@@ -1,0 +1,66 @@
+@charset "UTF-8";
+	#basket{
+		position : absolute;
+		width: 200px;
+		height: auto;
+		left: 50px;
+		z-index: 0;
+	}
+	.cart{
+		position :absolute;
+		margin-top: 15px;
+		margin-left: 10px;
+		z-index: 1;
+	}
+	.cart-image{
+		width: 150px;
+		height: auto;
+	}
+	/* slide */
+	.img {
+      position: absolute;
+      width:300px;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      overflow: hidden;
+    }
+    .img:first-child {
+        display: block;
+        opacity: 1;
+    }
+
+    .wrap {
+    	position: absolute;
+    	top: 20px;
+    	left: 10px;
+    }
+	.control{
+		width: 40px;
+	}
+	.prev{
+		position: absolute;
+		top: 55px;
+		left: -25px;
+		cursor: pointer;
+		border: none;
+     	outline: none;
+      	outline-style: none;
+      	-moz-outline-style:none;
+      	background-color: transparent; 
+	}
+	.next{
+		position: absolute;
+		top: 55px;
+		left: 275px;
+		cursor: pointer;
+		border: none;
+      	outline: none;
+      	outline-style: none;
+      	-moz-outline-style:none;
+      	background-color: transparent; 
+	}

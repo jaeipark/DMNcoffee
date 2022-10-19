@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="LogDTO">
+	
+	<insert id="logAdd">
+		insert into userlog (phone2,phone3,datelog,status,pointlog)
+		values (#{phone2},#{phone3},#{datelog},#{status},#{pointlog})
+	</insert>
+	
+	<select id="selectLog" resultType="LogDTO" parameterType="hashmap">
+		select datelog,status,pointlog
+		from userlog
+		where phone2 = #{phone2} and phone3 = #{phone3}
+		order by datelog desc
+	</select>
+	
+</mapper>

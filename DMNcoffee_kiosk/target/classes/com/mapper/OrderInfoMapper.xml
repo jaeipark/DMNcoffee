@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="OrderInfoDTO">
+
+	<select id="selectOrderAll" resultType="OrderInfoDTO">
+		select orderdate, orderseq, pdnum, pdnm, opt, amount, price, ordertakeout, complete_yn 
+		from orderinfo
+	</select>
+	
+	<insert id="orderAdd" parameterType="OrderInfoDTO">
+		insert into orderinfo (orderdate, orderseq, pdnum, pdnm, opt, amount, price, ordertakeout, complete_yn)
+		values (#{orderdate}, #{orderseq}, #{pdnum}, #{pdnm}, #{opt}, #{amount}, #{price}, #{ordertakeout}, #{complete_yn}) 
+	</insert>
+	
+	<select id="selectOrderSeq" resultType="OrderInfoDTO" parameterType="int">
+		select orderdate, orderseq, pdnum, pdnm, opt, amount, price, ordertakeout, complete_yn 
+		from orderinfo
+		where orderseq = #{orderseq}
+	</select>
+	
+	<select id="selectOrderLastDate" resultType="String">
+		select max(orderdate)
+		from orderinfo
+	</select>
+	
+	<select id="selectOrderDate" resultType="OrderInfoDTO" parameterType="String">
+		select orderdate, orderseq, pdnum, pdnm, opt, amount, price, ordertakeout, complete_yn 
+		from orderinfo
+		where orderdate = #{orderdate}
+	</select>
+	
+</mapper>

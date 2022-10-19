@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="OrderMapper">
+
+	<select id="saleList" resultType="OrderDTO" parameterType="hashmap">
+	select * 
+	  from orderinfo
+	  	where orderdate = to_char(sysdate,'yyyy/mm/dd')
+		<if test='yn.equals("N")'>
+		and complete_yn = 'N'
+		</if>
+	</select>
+	
+	<!-- <select id="saleList" resultType="OrderDTO" parameterType="hashmap">
+SELECT *
+  FROM (
+         SELECT A.ORDERDATE
+              , A.ORDERSEQ
+              , A.PDSEQ
+              , A.PDNO
+              , B.PDNM PDNAME
+              , A.ODERTAKEOUT
+              , A.COMPLETE_YN
+              , '1' AS LVL
+           FROM ORDERPRODUCT A
+              , PRODUCT B
+          WHERE A.PDNO       = B.PDNO
+            AND A.ORDERDATE  = TO_CHAR(SYSDATE, 'YYYYMMDD')
+         
+         UNION ALL
+       
+         SELECT ORDERDATE
+              , ORDERSEQ
+              , PDSEQ
+              , OPTSEQ
+              , '   ㄴ' || OPTNM  
+              , ODERTAKEOUT
+              , COMPLETE_YN
+              , '2' AS LVL
+           FROM (
+                 SELECT B.ORDERDATE
+                      , B.ORDERSEQ
+                      , B.PDSEQ
+                      , B.OPTSEQ
+                      , B.OPTNO
+                      , A.ODERTAKEOUT
+                      , A.COMPLETE_YN
+                   FROM ORDERPRODUCT A
+                      , ORDEROPTION B
+                  WHERE A.ORDERDATE  = B.ORDERDATE
+                    AND A.ORDERSEQ   = B.ORDERSEQ
+                    AND A.PDSEQ      = B.PDSEQ
+                    AND A.ORDERDATE  = TO_CHAR(SYSDATE, 'YYYYMMDD')
+                ) A
+              , OPT B
+          WHERE A.OPTNO = B.OPTNO
+            AND A.ORDERDATE  = TO_CHAR(SYSDATE, 'YYYYMMDD')
+       )
+       <if test='yn.equals("N")'>
+		WHERE complete_yn = 'N'
+		</if>   
+ ORDER 
+    BY ORDERDATE
+     , ORDERSEQ
+     , PDSEQ
+    , LVL
+	</select> -->
+	
+	<update id="updateSaleCompleteY" parameterType="string">
+	update orderinfo 
+	   set complete_yn = 'Y' 
+	 where orderdate = to_char(sysdate,'yyyy/mm/dd')
+	   and orderseq  = #{seq}
+	</update>
+	
+	<select id="curStateSelect" resultType="StateDTO">
+		SELECT SUM(YY) AS y
+             , SUM(NN) AS n
+             , SUM(YY) +  SUM(NN) AS yn
+          FROM (
+          	SELECT CASE WHEN COMPLETE_YN = 'Y' THEN 1 ELSE 0 END AS YY
+                 , CASE WHEN COMPLETE_YN = 'N' THEN 1 ELSE 0 END AS NN
+              FROM ORDERINFO 
+             WHERE ORDERDATE  = TO_CHAR(SYSDATE, 'YYYY/MM/DD')
+               AND PDNUM  = 1
+               )
+	</select>
+	
+	<delete id="saleCancel" parameterType="string">
+
+	delete from ORDERINFO
+	 where orderdate = to_char(sysdate,'yyyy/mm/dd')
+	   and orderseq  = #{scan}
+	
+	</delete>
+	
+	
+
+</mapper>

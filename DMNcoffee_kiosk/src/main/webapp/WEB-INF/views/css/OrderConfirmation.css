@@ -1,0 +1,46 @@
+@charset "UTF-8";
+	.check{
+		position: absolute;
+		top: 130px;
+		left: 755px;
+		width: 450px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 25px;
+	}
+	.check-table{
+		width: 450px;
+	}
+	.check-image{
+		width: 200px;
+		height: auto;
+		text-align: left;
+	}
+	.blank{
+		width: 200px;
+		background-color: transparent;
+		border: none;
+	}
+	.right{
+		text-align: right;
+	}
+	hr{
+		width: 100%;
+	}
+	.btn1{
+		margin-top: 820px;
+		margin-left: 890px;
+		width: 170px;
+		height: 50px;
+		border: none;
+		border-radius: 10px;
+		background-color: #f1f3f5;
+	}
+	.home{
+		width: 40px;
+	}
+	#choonDiv{
+		margin-top: 10px;
+		margin-left: 840px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 18px;
+	}

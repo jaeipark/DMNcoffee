@@ -1,0 +1,26 @@
+@charset "UTF-8";
+	.carousel{
+		position: absolute;
+		left: 715px;
+	}
+	.slide{
+		width: 510px;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+	.buttontable{
+		position: absolute;
+		top: 815px;
+		left: 712px;
+		width: 520px;
+	}
+	.btn{
+		background-color : transparent;
+  		border: none;
+  		cursor: pointer;
+	}
+	.img{
+		width: 230px;
+		height: auto;
+	}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CartDTO">
+
+	<select id="cartSelectAll" resultType="CartDTO">
+		select pdno, pdnm, amount, totalprice, opt, ctnm, pdnum
+		from cart
+		order by pdnum desc
+	</select>
+	
+	<delete id="cartDelAll">
+		delete from cart
+	</delete>
+	
+	<insert id="cartAdd" parameterType="CartDTO">
+		insert into cart (pdno, pdnm, amount, totalprice, opt, ctnm, pdnum)
+		values (#{pdno}, #{pdnm}, #{amount}, #{totalprice}, #{opt}, #{ctnm}, (SELECT NVL(MAX(pdnum), 0)+1 from cart))
+	</insert>
+	
+	<delete id="cartDel" parameterType="int">
+		delete
+		from cart
+		where pdnum = #{pdnum}
+	</delete>
+	
+	<update id="cartUpdate" parameterType="hashmap">
+		update cart
+		set amount = #{amount} , totalprice = #{totalprice}
+		where pdnum = #{pdnum}
+	</update>
+	
+	<select id="cartSelect" parameterType="int" resultType="CartDTO">
+		select pdno, pdnm, amount, totalprice, opt, ctnm, pdnum
+		from cart
+		where pdnum = #{pdnum}
+	</select>
+	
+</mapper>

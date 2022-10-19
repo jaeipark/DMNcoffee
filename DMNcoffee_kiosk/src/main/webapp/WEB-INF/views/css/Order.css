@@ -1,0 +1,90 @@
+@charset "UTF-8";
+	.home-icon{
+		width: 35px;
+		height: auto;
+	}
+	.home{
+		position: absolute;
+  		top: 25px;
+  		left : 715px;
+  		background-color : transparent;
+  		border: none;
+  		cursor:pointer;
+	}
+	.logo{
+		position: absolute;
+		top: 17px;
+  		left : 1020px;
+		width : 200px;
+		height: auto;
+		background-color : transparent;
+  		border: none;
+	}
+	.name{
+		border: 1px;
+		width: 510px;
+		height: 50px;
+		border-radius: 10px;
+		text-align: center;
+		margin-top: 100px;
+		margin-left: 710px;
+		background-color: #f1f3f5;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 28px;
+	}
+	.orderhistory{
+		position : absolute;
+		font-family: 'Noto Sans KR', sans-serif;
+		left: 715px;
+		top : 180px;
+		width: 510px;
+		border-spacing: 1px;
+		height: 470px;
+		overflow-y: auto; 
+	}
+	.btn-primary{
+		width: 40px;
+		color:black;
+		background-color: #f1f3f5;
+		border: none;
+	}
+	.btn:focus{
+		background-color: #6495ED;
+	}
+	.btn:hover{
+		background-color: #6495ED;
+	}
+	.pay{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 25px;
+		width : 510px;
+		position: absolute;
+		left: 715px;
+		top: 650px;
+		height: 200px;
+	}
+	.pay-table{
+		margin-left: 15px;
+		margin-top: 10px;
+		padding: 5px;
+	}
+	/* 버튼테이블 */
+	.btn1{
+		background-color: #f1f3f5;
+		border : none;
+		padding : 5px;
+		margin: 5px;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		width : 160px;
+		cursor: pointer;
+	}
+	.bottom{
+		position: absolute;
+		left: 710px;
+		top: 860px;
+	}

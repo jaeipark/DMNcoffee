@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ProductDTO">
+	
+	<select id="productSelectAll" resultType="ProductDTO" parameterType="int">
+		select pdno, pdnm, pdprice, ctno
+		from product
+		where ctno = #{ctno}
+	</select>
+	
+	<select id="selectCTNO" resultType="ProductDTO" parameterType="int">
+		select pdno, pdnm, pdprice, ctno
+		from product 
+		where ctno = #{ctno}
+	</select>
+	
+	<select id="selectPDNO" resultType="ProductDTO" parameterType="int">
+		select pdno, pdnm, pdprice, ctno, ctnm
+		from product join category
+		using (ctno)
+		where pdno = #{pdno}
+	</select>
+	
+	
+	
+</mapper>

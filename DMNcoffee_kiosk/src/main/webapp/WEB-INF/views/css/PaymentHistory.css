@@ -1,0 +1,45 @@
+@charset "UTF-8";
+	.orderprice {
+		width: 200px;
+		height: 50px;
+		text-align: right;
+		border: 0;
+		background-color: transparent;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 25px;
+	}
+	.orderprice2 {
+		width: 170px;
+		height: 50px;
+		text-align: right;
+		border: 0;
+		background-color: transparent;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 25px;
+	}
+	.blank{
+		border: 0;
+		background-color: transparent;
+		width: 240px;
+		height: 50px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 25px;
+		text-align: right;
+	}
+	.discount{
+		border: 0;
+		background-color: transparent;
+		width: 170px;
+		height: 50px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 25px;
+		text-align: right;
+	}
+	.minus{
+		border: 0;
+		background-color: transparent;
+		width: 280px;
+		height: 50px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 40px;
+	}

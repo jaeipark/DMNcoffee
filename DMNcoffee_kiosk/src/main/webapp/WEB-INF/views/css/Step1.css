@@ -1,0 +1,101 @@
+@charset "UTF-8";
+	/* top */
+	.home-icon{
+		width: 35px;
+		height: auto;
+	}
+	.home{
+		position: absolute;
+  		top: 25px;
+  		left : 715px;
+  		background-color : transparent;
+  		border: none;
+  		cursor:pointer;
+	}
+	.logo{
+		position: absolute;
+		top: 17px;
+  		left : 1020px;
+		width : 200px;
+		height: auto;
+		background-color : transparent;
+  		border: none;
+	}
+	.head{
+		position : absolute;
+		left: 715px;
+		top : 80px;
+		width: 510px;
+		text-align: left;
+		color: #6495ED;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+	}
+	/* question */
+	.question{
+		position : absolute;
+		left: 715px;
+		top : 180px;
+		width: 510px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 30px;
+		border-spacing: 1px;
+	}
+	.txt{
+		font-size: 20px;
+	}
+	/* member */
+	.member{
+		position : absolute;
+		left: 715px;
+		top: 290px;
+	}
+	.btn1{
+		width : 100px;
+		height: 120px;
+		background-color: #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 25px;
+		cursor: pointer;
+	}
+	/* pay */
+	.pay{
+		position: absolute;
+		left: 715px;
+		top: 650px;
+		width : 510px;
+		height: 200px;
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 25px;
+	}
+	.pay-table{
+		padding: 5px;
+	}
+	.left{
+		text-align: left;
+	}
+	.right{
+		text-align: right;
+	}
+	/* bottom */
+	.bottom{
+		position: absolute;
+		left: 710px;
+		top: 860px;
+	}
+	.btn2{
+		width : 160px;
+		padding : 5px;
+		margin: 5px;
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		cursor: pointer;
+	}

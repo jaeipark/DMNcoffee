@@ -1,0 +1,61 @@
+@charset "UTF-8";
+	.home-icon{
+		width: 35px;
+		height: auto;
+	}
+	.home{
+		background-color : transparent;
+		position: absolute;
+  		top: 25px;
+  		left : 715px;
+  		border: none;
+  		cursor:pointer;
+	}
+	.logo{
+		width : 200px;
+		height: auto;
+		background-color : transparent;
+		position: absolute;
+  		top: 17px;
+  		left : 1020px;
+  		border: none;
+	}
+	.head{
+		position : absolute;
+		top : 150px;
+		left : 710px;
+		width : 510px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 28px;
+		color: #6495ED;
+	}
+	.body{
+		position : absolute;
+		top : 350px;
+		left : 715px;
+		width : 510px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 24px;
+	}
+	.tail{
+		position : absolute;
+		top : 850px;
+		left : 715px;
+		width : 510px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 24px;
+	}
+	.card_insert{
+		width: 300px;
+		height: auto;
+	}
+	.btn1{
+		background-color:  #f1f3f5;
+		border : none;
+		border-radius: 10px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size : 20px;
+		width : 160px;
+		cursor: pointer;
+		height: 50px;
+	}

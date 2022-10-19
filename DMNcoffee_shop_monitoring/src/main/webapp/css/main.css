@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.outline{
+display: flex;
+justify-content:center;
+
+}
+.init{
+align-items: center;
+border: 3px solid black;
+width: 1400px;
+height: 950px;
+}
+
+.logo{
+display : flex;
+font-style: italic;
+font-weight: bold;
+font-size: 30px;
+width: 950px;
+height : 50px;
+
+}
+
+.toplogo{
+align-items: center;
+display: flex;
+
+font-weight: bold;
+width: 1000px;
+height:210px;
+margin-left: 220px;
+background-image: url('../images/CafeName.png');
+background-position: top;
+background-size: 700px;
+background-repeat: no-repeat; /* 사진 반복적이지 않게 하는것 */ 
+}
+#leftlogo{
+align-items: center;
+font-size: 60px;
+font-weight: bold;
+width: 350px;
+height:550px;
+background-image: url('../images/ShopMonitor.png');
+background-position: top;
+background-size: 500px;
+background-repeat: no-repeat; 
+	
+}
+
+.id{
+font-size: 40px;
+width: 650px;
+height:250px;
+margin-left: 150px;
+}
+
+.input_text{
+text-align : center;
+width : 80%;
+font-size: 40px;
+font-weight: 200;
+line-height: 70px;
+margin-left: 45px;
+box-sizing: border-box;
+}
+.signup{
+text-align : center;
+font-size: 30px;
+width: 122px;
+margin-top : 95px;
+margin-left : 850px;
+border: 3px solid black;
+border-radius: 2em;
+display : flex;
+}
+.login{
+text-align : center;
+font-size: 60px;
+width: 500px;
+margin-left : 185px;
+/* border: 3px solid black;
+border-radius: 1em; */
+}
+#manager{
+font-size: 45px;
+font-weight: bold;
+width: 460px;
+height:70px;
+}
+#toptitle{
+	margin-left : 160px;
+	text-align : center;
+	font-size: 45px;
+	font-weight: bold;
+	text-align : center;
+	margin-top : 10px;
+	margin-bottom : 25px;
+}

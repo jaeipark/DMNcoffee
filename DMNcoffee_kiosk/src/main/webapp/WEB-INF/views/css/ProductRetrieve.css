@@ -1,0 +1,54 @@
+@charset "UTF-8";
+	.logo{
+		width: 150px;
+		height: auto;
+		margin-left: 300px;
+	}
+	/* menu */
+	.menu-image{
+		width: 200px;
+		height: auto;
+	}
+	.menu-name{
+		width: 250px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		text-align: center;
+	}
+	.menu-price{
+		font-family: 'Noto Sans KR', sans-serif;
+		font-size: 20px;
+		text-align: center;
+	}
+	.input-menu-price{
+		width : 70px;
+		border: none;
+		background-color: transparent;
+	}
+	/* result */
+	#result{
+		display: none;
+	}
+	*{
+		margin:0; 
+		padding:0;
+	}
+	.accordion {
+		position:absolute;
+		left:50%;
+		transform:translateX(-50%);
+		width:450px;
+	}
+	input[id*="opt"] {display:none;}
+	input[id*="opt"] + label {display:block;padding:20px;border:1px solid #6495ED;border-bottom:0;color: #f1f3f5;font-weight:900;background: #6495ED;cursor:pointer;position:relative; font-size: 25px;}
+	input[id*="opt"] + label em {position:absolute;top:50%;right:10px;width:30px;height:30px;margin-top:-15px;display:inline-block;background:url("../image/utility/arrow.png") 0 0 no-repeat;}
+	input[id*="opt"] + label + div {max-height:0;transition: all .35s;overflow:hidden;background: #f1f3f5;font-size:20px; text-align: center;}
+	input[id*="opt"] + label + div input[id=ice] {display:inline-block;padding:20px;}
+	input[id*="opt"] + label + div input[id=paidopt] {display:inline-block;padding:20px;}
+	input[id*="opt"]:checked + label + div {max-height:100px;}
+	input[id*="opt"]:checked + label em {background-position:0 -30px;}
+
+	input[id*="cb"] + label {display: inline-block; width: 100px; height: 50px; border: 2px solid #f1f3f5; cursor: pointer;}
+	input[id*="cb"]:checked + label {background-color: #6495ED;}
+	input[id*="cb"] {display: none;}
+	
